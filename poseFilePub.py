@@ -11,7 +11,7 @@ values = [float(x.strip('-')) for x in f]
 
 def publish():
     rospy.init_node('jatin',anonymous=True)
-    pub=rospy.Publisher('/initialpose',PoseWithCovarianceStamped,queue_size =1)
+    pub=rospy.Publisher('/initialpose',PoseWithCovarianceStamped,queue_size =5)
 
     move=PoseWithCovarianceStamped()
 
